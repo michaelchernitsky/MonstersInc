@@ -1,0 +1,31 @@
+Add-Migration InitialPersistedGrantDbMigration -c PersistedGrantDbContext -o Data/Migrations/IdentityServer/PersistedGrantDb
+Add-Migration InitialConfigurationDbMigration -c ConfigurationDbContext -o Data/Migrations/IdentityServer/ConfigurationDb
+Add-Migration InitialCreate  -c IdServer4ExampleDbContext -o Data/Migrations/IdentityServer/IdServer4ExampleDb
+
+Add-Migration InitialMonstersIncDbMigration -c MonstersIncDbContext -o Data/Migrations/IdentityServer/MonstersIncDb
+Add-Migration InitialCreate  -c AppIdentityDbContext
+
+Update-Database -Context PersistedGrantDbContext
+Update-Database -Context ConfigurationDbContext 
+ Update-Database -Context IdServer4ExampleDbContext
+ Update-Database -Context MonstersIncDbContext
+
+ !!!!!!!!! run this commands after cd to AuthServer.Infrastructure
+ AuthServer.Infrastructure> dotnet ef migrations add initial --context AppIdentityDbContext
+AuthServer.Infrastructure> dotnet ef migrations add initial --context PersistedGrantDbContext
+AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext
+AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext
+
+//SQLServer2017-KB4557397-x64
+
+
+
+  insert into Doors values('door 1' , 100)
+  insert into Doors values('door 2' , 200)
+  insert into Doors values('door 3' , 300)
+  insert into Doors values('door 4' , 400)
+  insert into Doors values('door 5' , 500)
+  insert into Doors values('door 6' , 600)
+  insert into Doors values('door 7' , 700)
+  insert into Doors values('door 8' , 800)
+  insert into Doors values('door 9' , 900)
