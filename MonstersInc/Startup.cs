@@ -53,6 +53,7 @@ namespace MonstersInc
 
             services.AddSwaggerGen(options =>
             {
+
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Protected API", Version = "v1" });
 
                 options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme

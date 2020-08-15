@@ -100,8 +100,8 @@ namespace AuthServer.Infrastructure.Migrations.AppIdentityDb
                     b.HasData(
                         new
                         {
-                            Id = "82c8e8a8-3844-42dd-902d-a3da6b79307b",
-                            ConcurrencyStamp = "fcbf8072-f20c-4567-88c5-b2944ae70564",
+                            Id = "c2edb4d3-8856-4089-89b5-30c16e1cc836",
+                            ConcurrencyStamp = "13180b6b-0e94-4c1b-afaa-c0a82fd663b3",
                             Name = "consumer",
                             NormalizedName = "CONSUMER"
                         });
