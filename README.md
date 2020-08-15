@@ -36,8 +36,16 @@ For db migration please use the following instructions:
 
 For sql server 2017 without  SQLServer2017-KB4557397-x64 (for migration only), it is required to add  to connection string  AttachDbFilename section:
 
+for solution AuthServer.Infrastructure
+
 ``` c#
 ;AttachDbFilename=[date file directory]\\AuthServer.mdf
+```
+
+for solution MonstersInc 
+
+``` c#
+;AttachDbFilename=[date file directory]\\MonstersInc.mdf
 ```
 
 After db migration required to setup Doors list in MonstersInc database . Run from SQL Management :
