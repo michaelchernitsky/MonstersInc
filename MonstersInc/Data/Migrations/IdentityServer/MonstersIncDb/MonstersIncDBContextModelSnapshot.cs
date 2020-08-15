@@ -88,7 +88,7 @@ namespace MonstersInc.Data.Migrations.IdentityServer.MonstersIncDb
 
             modelBuilder.Entity("MonstersInc.Core.Models.DepletedDoor", b =>
                 {
-                    b.HasOne("MonstersInc.Core.Models.Door", "Door")
+                    b.HasOne("MonstersInc.Core.Models.Door", "Doors")
                         .WithMany()
                         .HasForeignKey("DoorId")
                         .OnDelete(DeleteBehavior.Cascade)

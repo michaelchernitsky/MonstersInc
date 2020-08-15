@@ -11,7 +11,7 @@ Update-Database -Context ConfigurationDbContext
  Update-Database -Context MonstersIncDbContext
 
  !!!!!!!!! run this commands after cd to AuthServer.Infrastructure
- AuthServer.Infrastructure> dotnet ef migrations add initial --context AppIdentityDbContext
+AuthServer.Infrastructure> dotnet ef migrations add initial --context AppIdentityDbContext
 AuthServer.Infrastructure> dotnet ef migrations add initial --context PersistedGrantDbContext
 AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext
 AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext

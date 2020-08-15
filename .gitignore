@@ -340,8 +340,8 @@ ASALocalRun/
 healthchecksdb
 
 #key
-AuthServer\tempkey.rsa
-MonstersInc\tempkey.jwk
+AuthServer/tempkey.rsa
+MonstersInc/tempkey.jwk
 
 #log
-AuthServer\authserver_log.txt
+AuthServer/authserver_log.txt
