@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+#key
+AuthServer\tempkey.rsa
+MonstersInc\tempkey.jwk
