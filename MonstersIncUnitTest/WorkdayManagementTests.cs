@@ -16,13 +16,13 @@ using MonstersInc.Core.Models;
 namespace MonstersIncUnitTest
 {
     [TestCaseOrderer("MonstersIncUnitTest.Orderers.PriorityOrderer", "MonstersIncUnitTest")]
-    public class WorkdayManagementTests : IClassFixture<WebApplicationFactory<Startup>>
+    public class WorkdayManagementTests : IClassFixture<CustomWebApplicationFactory<Startup>>
     {
         private HttpClient _client;
-        private WebApplicationFactory<Startup> _factory;
+        private CustomWebApplicationFactory<Startup> _factory;
         private readonly string _token;
 
-        public WorkdayManagementTests(WebApplicationFactory<Startup> factory)
+        public WorkdayManagementTests(CustomWebApplicationFactory<Startup> factory)
         {
             _factory = factory;
         
